@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
 import path from 'node:path'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
+  base: isProd ? '/vue3-antdv-admin-docs' : '',
   title: 'Vue3 Antdv Admin',
   description: '一个优雅、清新、漂亮的中后台模版',
   head: [
@@ -34,7 +37,7 @@ export default defineConfig({
     editLink: {
       text: '为此页提供修改建议',
       pattern:
-        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/:path'
+        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/:path/src'
     },
     socialLinks: [
       {
