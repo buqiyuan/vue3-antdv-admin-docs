@@ -1,8 +1,11 @@
 import { defineConfig } from 'vitepress'
 import path from 'node:path'
 
+const isProd = process.env.NODE_ENV === 'production'
+
+console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 export default defineConfig({
-  base: import.meta.env.PROD ? '/vue3-antdv-admin-docs' : '',
+  base: isProd ? '/vue3-antdv-admin-docs' : '',
   title: 'Vue3 Antdv Admin',
   description: '一个优雅、清新、漂亮的中后台模版',
   head: [
