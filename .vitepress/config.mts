@@ -3,7 +3,6 @@ import path from 'node:path'
 
 const isProd = process.env.NODE_ENV === 'production'
 
-console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 export default defineConfig({
   base: isProd ? '/vue3-antdv-admin-docs' : '',
   title: 'Vue3 Antdv Admin',
