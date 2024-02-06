@@ -37,7 +37,7 @@ export default defineConfig({
     editLink: {
       text: '为此页提供修改建议',
       pattern:
-        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/:path'
+        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/:path/src'
     },
     socialLinks: [
       {
