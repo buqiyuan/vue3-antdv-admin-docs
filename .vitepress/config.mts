@@ -37,7 +37,7 @@ export default defineConfig({
     editLink: {
       text: '为此页提供修改建议',
       pattern:
-        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/:path/src'
+        'https://github.com/buqiyuan/vue3-antdv-admin-docs/tree/main/src/:path'
     },
     socialLinks: [
       {
@@ -85,24 +85,29 @@ export default defineConfig({
         link: '/other/donate'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          text: '指南',
-          items: [
-            {
-              text: '介绍',
-              link: '/guide/introduction'
-            },
-            {
-              text: '开始',
-              link: '/guide/getting-started'
-            },
-            { text: 'mock服务', link: '/guide/mock-service' },
-            { text: '接口管理', link: '/guide/api-manage' }
-          ]
-        }
-      ]
-    }
+    sidebar: [
+      {
+        text: '指南',
+        items: [
+          {
+            text: '介绍',
+            link: '/guide/introduction'
+          },
+          {
+            text: '开始',
+            link: '/guide/getting-started'
+          },
+          { text: 'mock服务', link: '/guide/mock-service' },
+          { text: '接口管理', link: '/guide/api-manage' }
+        ]
+      },
+      {
+        text: '组件',
+        items: [
+          { text: 'Table', link: '/components/table' },
+          { text: 'Form', link: '/components/form' }
+        ]
+      }
+    ]
   }
 })

@@ -1,14 +1,10 @@
 # Mock 服务
 
-采用`msw`作为 mock 数据服务。
-
-## 为什么使用 msw
-
-我们希望的是`mock`服务尽可能的不要侵入到我们的项目中和尽可能少的修改项目的代码，`msw`作为一个独立的服务，抽离到`mocks`目录下，不会对项目产生任何影响。
+采用 [msw](https://mswjs.io/) 作为 mock 数据服务。
 
 ## 优点
 
-- 集成于前端，不需要写 node 中间件（比如 express, koa)
+- 集成于前端，不需要写 node 中间件（比如 express, koa）
 - 语法基本和 express 一致
 - 直接通过 chrome 快速 debugger
 - 不存在跨域问题
