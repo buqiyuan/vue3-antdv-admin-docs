@@ -1,6 +1,6 @@
 # Form
 
-[在线演练场](/vue3-antdv-admin-docs/playground/) <br><br>
+<a href="/vue3-antdv-admin-docs/playground/" target="_blank">在线演练场</a> <br><br>
 
 ## 基本使用
 

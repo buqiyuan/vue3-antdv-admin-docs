@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'Vue3 Antdv Admin',
   description: '一个优雅、清新、漂亮的中后台模版',
   ignoreDeadLinks: [
-    // 自定义函数，忽略所有包含 "ignore "的链接
+    // 自定义函数，忽略所有包含 "/playground/" 的链接
     (url) => {
       return url.toLowerCase().includes('/playground/')
     }
