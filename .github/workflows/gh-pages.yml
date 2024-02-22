@@ -41,7 +41,7 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: pnpm build
+        run: pnpm run deploy
         env:
           FORCE_COLOR: 2
 

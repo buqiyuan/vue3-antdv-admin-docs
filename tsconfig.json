@@ -13,6 +13,6 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true
   },
-	"include": [".vitepress"],
+  "include": [".vitepress", "playground"],
   "exclude": ["dist", "node_modules", "cache"]
 }

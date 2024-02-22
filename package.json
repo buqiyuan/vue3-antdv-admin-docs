@@ -19,12 +19,13 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "serve": "vitepress serve"
+    "serve": "vitepress serve",
+    "deploy": "pnpm build && pnpm -F playground build"
   },
   "devDependencies": {
     "@types/node": "20.11.16",
     "typescript": "5.3.3",
     "unplugin-icons": "^0.18.5",
-    "vitepress": "1.0.0-rc.43"
+    "vitepress": "1.0.0-rc.44"
   }
 }
